@@ -12,7 +12,7 @@ Windows service for writing RabbitMQ trace messages to MS SQL database.
 <tr><td>exchange</td><td>nvarchar(255)</td><td>Точка обмена, в которую поступило сообщение лога.</td></tr>
 <tr><td>routing_key	nvarchar(255)</td><td>Ключ маршрутизации сообщения лога:<ul>
 <li>сообщений, опубликованные в MB имеют ключ publish.</li>
-<li>сообщения, считанные из MB имеют ключ `deliver.<queue>`, где `<queue>` — имя очереди, из которой забрали сообщение</li></ul></td></tr>
+<li>сообщения, считанные из MB имеют ключ <code>deliver.&lt;queue&gt;</code>, где <code>&lt;queue&gt;</code> — имя очереди, из которой забрали сообщение</li></ul></td></tr>
 <tr><td>properties</td><td>nvarchar(2000)</td><td>Все параметры сообщения в формате JSON.</td></tr>
 <tr><td>user</td><td>nvarchar(50)</td><td>Пользователь RMQ, от имени которого было опубликовано исходное сообщение.</td></tr>
 <tr><td>routed_queues</td><td>nvarchar(255)</td><td>Список очередей (разделитель - запятая), в которые было отправлено исходное сообщение.</td></tr>
